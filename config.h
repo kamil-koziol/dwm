@@ -68,8 +68,8 @@ static const char *brightupcmd[] = { "brightnessctl", "set", "+10%", NULL };
 static const char *brightdowncmd[] = { "brightnessctl", "set", "10%-", NULL };
 static const char *brightupkbdcmd[]   = { "brightnessctl", "--device=tpacpi::kbd_backlight", "set", "1+", NULL };
 static const char *brightdownkbdcmd[] = { "brightnessctl", "--device=tpacpi::kbd_backlight", "set", "1-", NULL };
-static const char *lockcmd[] = { "lock" };
-static const char *bookmarkscmd[] = { "bookmarks" };
+static const char *lockcmd[] = { "lock", NULL };
+static const char *bookmarkscmd[] = { "bookmarks", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
